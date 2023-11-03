@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="header-placeholder"></div> <!-- Placeholder where the header will be dynamically inserted -->
+
+
+<!-- The rest of your webpage content goes here -->
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        fetch('header.html')
+            .then(response => response.text())
+            .then(text => document.getElementById('header-placeholder').innerHTML = text)
+            .catch(error => console.error('Error loading the header:', error));
+    });
+    </script>
+
+</body>
+</html>

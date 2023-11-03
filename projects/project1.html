@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<div id="header-placeholder"></div> <!-- Placeholder where the header will be dynamically inserted -->
+
+<!-- Main Content -->
+<div class="container">
+    <!-- Project Title -->
+    <h1 class="project-title">Project 1</h1>
+    <!-- Subheader with project status and number of posts -->
+    <h2 class="project-subheader">Status: Ongoing | Total Posts: 6</h2>
+
+    <!-- Post Cards Grid -->
+    <div class="post-grid">
+        <!-- Post Card 1 -->
+        <div class="post-card">
+            <img src="post-thumbnail-1.jpg" alt="Post 1 Thumbnail" class="post-thumbnail">
+            <h3 class="post-title">Post Title 1</h3>
+            <p class="post-excerpt">Post excerpt or short description goes here...</p>
+            <a href="#" class="post-link">Read More</a>
+        </div>
+
+        <!-- Post Card 2 -->
+        <div class="post-card">
+            <img src="post-thumbnail-2.jpg" alt="Post 2 Thumbnail" class="post-thumbnail">
+            <h3 class="post-title">Post Title 2</h3>
+            <p class="post-excerpt">Post excerpt or short description goes here...</p>
+            <a href="#" class="post-link">Read More</a>
+        </div>
+
+        <!-- Post Card 3 -->
+        <div class="post-card">
+            <img src="post-thumbnail-3.jpg" alt="Post 3 Thumbnail" class="post-thumbnail">
+            <h3 class="post-title">Post Title 3</h3>
+            <p class="post-excerpt">Post excerpt or short description goes here...</p>
+            <a href="#" class="post-link">Read More</a>
+        </div>
+
+        <!-- Post Card 4 -->
+        <div class="post-card">
+            <img src="post-thumbnail-4.jpg" alt="Post 4 Thumbnail" class="post-thumbnail">
+            <h3 class="post-title">Post Title 4</h3>
+            <p class="post-excerpt">Post excerpt or short description goes here...</p>
+            <a href="#" class="post-link">Read More</a>
+        </div>
+
+        <!-- Post Card 5 -->
+        <div class="post-card">
+            <img src="post-thumbnail-5.jpg" alt="Post 5 Thumbnail" class="post-thumbnail">
+            <h3 class="post-title">Post Title 5</h3>
+            <p class="post-excerpt">Post excerpt or short description goes here...</p>
+            <a href="#" class="post-link">Read More</a>
+        </div>
+
+        <!-- Post Card 6 -->
+        <div class="post-card">
+            <img src="post-thumbnail-6.jpg" alt="Post 6 Thumbnail" class="post-thumbnail">
+            <h3 class="post-title">Post Title 6</h3>
+            <p class="post-excerpt">Post excerpt or short description goes here...</p>
+            <a href="#" class="post-link">Read More</a>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        fetch('../header.html')
+            .then(response => response.text())
+            .then(text => document.getElementById('header-placeholder').innerHTML = text)
+            .catch(error => console.error('Error loading the header:', error));
+    });
+</script>
+
+</body>
+</html>
